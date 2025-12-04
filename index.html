@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu-overlay" style="display:none;" onclick="closeMenu()"></div>
+  <header>
+    <img class="logo" src="images/logo.svg" alt="Logo" height="32">
+    <div class="mobile-nav-buttons">
+      <button id="menu-toggle" aria-label="Open menu" class="mobile-menu-button">
+        <img src="images/icon-menu.svg" alt="Menu" height="28">
+      </button>
+      <button id="menu-close" aria-label="Close menu" class="mobile-menu-button" style="display:none;">
+        <img src="images/icon-close-menu.svg" alt="Close" height="28">
+      </button>
+    </div>
+    <nav class="nav">
+      <ul class="nav-links">
+  <li>Features <img src="images/icon-arrow-down.svg" alt="Dropdown" height="8">
+    <ul class="dropdown" style="display:none; position:absolute; background:var(--gray-50); box-shadow:0 8px 24px rgba(0,0,0,0.08); padding:1rem 1.5rem; border-radius:10px; margin-top:0.5rem; list-style:none;">
+      <li><img src="images/icon-todo.svg" alt="Todo" height="16"> Todo List</li>
+      <li><img src="images/icon-calendar.svg" alt="Calendar" height="16"> Calendar</li>
+      <li><img src="images/icon-reminders.svg" alt="Reminders" height="16"> Reminders</li>
+      <li><img src="images/icon-planning.svg" alt="Planning" height="16"> Planning</li>
+    </ul>
+  </li>
+  <li>Company <img src="images/icon-arrow-down.svg" alt="Dropdown" height="8">
+    <ul class="dropdown" style="display:none; position:absolute; background:var(--gray-50); box-shadow:0 8px 24px rgba(0,0,0,0.08); padding:1rem 1.5rem; border-radius:10px; margin-top:0.5rem; list-style:none;">
+      <li>History</li>
+      <li>Our Team</li>
+      <li>Blog</li>
+    </ul>
+  </li>
+  <li>Careers</li>
+  <li>About</li>
+</ul>
+      <div class="nav-actions">
+        <a href="#" class="login-btn" onclick="closeMenu()">Login</a>
+        <a href="#" class="register-btn" onclick="closeMenu()">Register</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img class="hero-img" src="images/image-hero-desktop.png" alt="Hero" srcset="images/image-hero-mobile.png 600w, images/image-hero-desktop.png 900w" sizes="(max-width: 600px) 100vw, 50vw">
+      <div class="hero-content">
+        <h1 class="hero-title">Make remote work</h1>
+        <p class="hero-desc">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="cta-btn">Learn more</button>
+        <div class="clients">
+          <img src="images/client-databiz.svg" alt="Databiz">
+          <img src="images/client-audiophile.svg" alt="Audiophile">
+          <img src="images/client-meet.svg" alt="Meet">
+          <img src="images/client-maker.svg" alt="Maker">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
