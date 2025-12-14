@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
       e.stopPropagation();
     });
     window.addEventListener('resize', function () {
-      if (window.innerWidth > 600) closeMenu();
+      if (window.innerWidth > 768) closeMenu();
     });
   }
   document.querySelectorAll('.nav-links > li').forEach(function (item) {
